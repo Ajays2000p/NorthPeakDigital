@@ -151,6 +151,16 @@ main section[id] {
   background-color: var(--color-bg);
 }
 
+/* Defer non-critical below-the-fold section rendering where supported */
+.services,
+.testimonials,
+.pricing,
+.contact,
+.footer {
+  content-visibility: auto;
+  contain-intrinsic-size: 700px;
+}
+
 /* -------------------------------------------------------
    4. SECTION HEADER (shared)
    ------------------------------------------------------- */
